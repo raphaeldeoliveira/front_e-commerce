@@ -2,6 +2,15 @@
     margin: 0;
 }
 
+input[type="text"]:focus {
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: black;
+}
+
 .App {
 
     header {
@@ -10,6 +19,25 @@
         height: 80px;
         justify-content: space-evenly;
         align-items: center;
+
+        .div-carrinho {
+            position: relative;
+
+            title {
+                margin-bottom: -50px;
+            }
+
+            .balao-carrinho {
+                display: none;
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                border-radius: 15px;
+                left: -120%;
+                bottom: -1200%;
+                position: absolute;
+            }
+        }
     
         .search-bar {
             display: flex;
@@ -23,6 +51,7 @@
     
             input {
                 width: 92%;
+                height: 86%;
                 border: none;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
@@ -34,11 +63,18 @@
                 height: 100%;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
-                text-align: center;
+                display: flex;
+                align-items: center;
+
+                span {
+                    display: block;
+                    margin: auto;
+                }
             }
     
             .lupa-image:hover {
                 background-color: green;
+                border-left: 1px solid black;
             }
     
         }
@@ -52,7 +88,6 @@
     }
     
     main {
-    
     
         .card-main-content {
             width: 300px;

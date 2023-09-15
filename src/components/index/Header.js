@@ -30,7 +30,6 @@ export default function Header() {
             <div className="div-carrinho" onMouseLeave={mouseSaiuCarrinho}>
                 <div 
                     onMouseEnter={mouseEntrouCarrinho}
-                    
                     className="title"
                 >carrinho</div>
                 <div 

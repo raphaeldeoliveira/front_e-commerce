@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom"
+
 export default function Header() {
 
     const [showCarrinhoList, setShowCarrinhoList] = React.useState(false);
@@ -14,7 +16,7 @@ export default function Header() {
 
     return (
         <header>
-            <div>**Logo do e-commerce**</div>
+            <Link to="/">**Logo do e-commerce**</Link>
 
             <div className="search-bar">
                 <input type="text" placeholder="O que você está procurando"/>

@@ -72,6 +72,8 @@
         display: flex;
         background-color: purple;
         height: 40px;
+        align-items: center;
+        justify-content: space-evenly;
     }
     
     main {
@@ -96,3 +98,13 @@
     }
     
 }
+
+.main-content {
+
+    .grid-content {
+        display: grid;
+        grid-template-columns: 3;
+    }
+    
+}
+

@@ -1,17 +1,4 @@
-* {
-    margin: 0;
-}
-
-input[type="text"]:focus {
-    outline: none;
-    border: none;
-}
-
-body {
-    background-color: black;
-}
-
-.App {
+.initialPage {
 
     header {
         display: flex;
@@ -107,22 +94,5 @@ body {
             }
         }
     }
-
-}
-
-// classe criada para testar a pagina de login antes de ter aprendido sobre rotas
-.App2 {
-
-    header {
-
-        .logo {
-            padding-left: 8%;
-        }
-
-    }
-
-    .form-login {
-        display: flex;
-    }
-
+    
 }
